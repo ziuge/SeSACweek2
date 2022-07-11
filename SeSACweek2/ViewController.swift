@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var orangeView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+//        orangeView.layer.cornerRadius = orangeView.frame.width / 2
+//        orangeView.layer.sha
+//        orangeView.clipsToBounds = true
+        orangeView.layer.maskedCorners = [.layerMaxXMaxYCorner]
+        orangeView.layer.cornerRadius = 15
     }
 
 
